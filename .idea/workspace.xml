@@ -5,20 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab370e1-16d2-4051-98b8-1a6cc2adcafe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_imgs/the_walking_dead.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/1.并发并行、进程线程概念复习(SSG).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/CompletableFuture源码图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/2.Future_CompletableFuture(SSG).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/completable_future/CompletableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/completable_future/CompletableFutureMethodDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/completable_future/CompletableFutureStreamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/completable_future/CompletableJoinGetDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/future/FutureApiDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/future/FutureGetDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/future/FutureIsDoneDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/future/FutureThreadPoolDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,18 +43,98 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/kultimos/SSG_BLK_JUC/daily_imgs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/kultimos/SSG_BLK_JUC/daily_imgs&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\kultimos\SSG_BLK_JUC\daily_imgs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\kultimos\SSG_BLK_JUC\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CompletableFutureMethodDemo">
+    <configuration name="CompletableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="completable_future.CompletableDemo" />
+      <module name="SSG_BLK_JUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="completable_future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompletableFutureMethodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="completable_future.CompletableFutureMethodDemo" />
+      <module name="SSG_BLK_JUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="completable_future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompletableFutureStreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="completable_future.CompletableFutureStreamDemo" />
+      <module name="SSG_BLK_JUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="completable_future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompletableJoinGetDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="completable_future.CompletableJoinGetDemo" />
+      <module name="SSG_BLK_JUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="completable_future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FutureIsDoneDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="future.FutureIsDoneDemo" />
+      <module name="SSG_BLK_JUC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="future.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CompletableFutureMethodDemo" />
+        <item itemvalue="Application.CompletableFutureStreamDemo" />
+        <item itemvalue="Application.CompletableJoinGetDemo" />
+        <item itemvalue="Application.CompletableDemo" />
+        <item itemvalue="Application.FutureIsDoneDemo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,7 +144,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706175826323</updated>
-      <workItem from="1706175827746" duration="766000" />
+      <workItem from="1706175827746" duration="992000" />
+      <workItem from="1706233933064" duration="15000" />
+      <workItem from="1706259803448" duration="5000" />
+      <workItem from="1706509362996" duration="9756000" />
+      <workItem from="1706577500683" duration="17498000" />
+      <workItem from="1706665905171" duration="6953000" />
+      <workItem from="1706751247312" duration="8595000" />
+      <workItem from="1706856202056" duration="1248000" />
     </task>
     <servers />
   </component>
@@ -70,5 +168,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/completable_future/CompletableFutureMethodDemo.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
