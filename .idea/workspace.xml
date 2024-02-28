@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab370e1-16d2-4051-98b8-1a6cc2adcafe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/mark word结构示意图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/monitor结构图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/对象头示意图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/3.Monitor学习(BLK).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daily_imgs/the_stranger_things.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/4.对象内存布局(SSG).md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/3.Monitor学习(BLK).md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/3.Monitor学习(BLK).md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,11 @@
       <workItem from="1706856202056" duration="1982000" />
       <workItem from="1708219279516" duration="8769000" />
       <workItem from="1708478776558" duration="5541000" />
-      <workItem from="1708939085613" duration="1149000" />
+      <workItem from="1708939085613" duration="4569000" />
+      <workItem from="1708996693939" duration="714000" />
+      <workItem from="1709030685812" duration="2225000" />
+      <workItem from="1709084182797" duration="414000" />
+      <workItem from="1709084604073" duration="866000" />
     </task>
     <servers />
   </component>
