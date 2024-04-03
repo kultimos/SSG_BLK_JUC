@@ -21,7 +21,7 @@ public class AQSProperty {
         static final Node EXCLUSIVE = null;
 
         /**
-         * 表示当前节点在队列中的状态,具体的状态由下面集中
+         * 表示当前节点在队列中的状态,具体的状态由下面几种
          */
         volatile int waitStatus;
 

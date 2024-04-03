@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab370e1-16d2-4051-98b8-1a6cc2adcafe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/AQS底层的排队等候队列,由CLH队列变体实现.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/同步队列示意图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes/7.AQS学习(SSG).md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aqs/AQSProperty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aqs/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/8.ThreadLocal学习.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes/9.强软弱虚——四种引用方式.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/four_reference/Phantom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/four_reference/Soft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/four_reference/Strong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/thread_local/ThreadSafetyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/thread_local/initMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/5.synchronized锁的种类及升级步骤.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/5.synchronized锁的种类及升级步骤(SSG).md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/6.LockSupport的学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/6.LockSupport的学习(SSG).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/3.Monitor学习(BLK).md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/3.Monitor学习(BLK).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/5.synchronized锁的种类及升级步骤(SSG).md" beforeDir="false" afterPath="$PROJECT_DIR$/notes/5.synchronized锁的种类及升级步骤(SSG).md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aqs/AQSProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aqs/AQSProperty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/megvii_work/beijing/sc-apiserver-mvp",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/kultimos/SSG_BLK_JUC&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\kultimos\SSG_BLK_JUC\daily_imgs" />
@@ -70,13 +74,14 @@
       <recent name="D:\kultimos\SSG_BLK_JUC\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="LockAwaitSignal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lock_support.LockAwaitSignal" />
+  <component name="RunManager" selected="Application.ThreadSafetyExample">
+    <configuration name="Phantom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="four_reference.Phantom" />
       <module name="SSG_BLK_JUC" />
+      <option name="VM_PARAMETERS" value="-Xms10m -Xmx10m" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lock_support.*" />
+          <option name="PATTERN" value="four_reference.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +89,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockElimination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="syn.LockElimination" />
+    <configuration name="Soft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="four_reference.Soft" />
       <module name="SSG_BLK_JUC" />
+      <option name="VM_PARAMETERS" value="-Xms10m -Xmx10m" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="syn.*" />
+          <option name="PATTERN" value="four_reference.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectWaitNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lock_support.ObjectWaitNotify" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="SSG_BLK_JUC" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadNotSecurity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_local.ThreadNotSecurity" />
       <module name="SSG_BLK_JUC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lock_support.*" />
+          <option name="PATTERN" value="thread_local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheParkUnPark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lock_support.TheParkUnPark" />
+    <configuration name="ThreadSafetyExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_local.ThreadSafetyExample" />
       <module name="SSG_BLK_JUC" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lock_support.*" />
+          <option name="PATTERN" value="thread_local.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,26 +136,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aqs.test" />
-      <module name="SSG_BLK_JUC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aqs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.ThreadNotSecurity" />
+      <item itemvalue="Application.ThreadSafetyExample" />
+      <item itemvalue="Application.Phantom" />
+      <item itemvalue="Application.Soft" />
+      <item itemvalue="Application.Test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.TheParkUnPark" />
-        <item itemvalue="Application.LockAwaitSignal" />
-        <item itemvalue="Application.ObjectWaitNotify" />
-        <item itemvalue="Application.LockElimination" />
+        <item itemvalue="Application.ThreadSafetyExample" />
+        <item itemvalue="Application.ThreadNotSecurity" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Phantom" />
+        <item itemvalue="Application.Soft" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +191,19 @@
       <workItem from="1709945133775" duration="7296000" />
       <workItem from="1710051968074" duration="3397000" />
       <workItem from="1710120005970" duration="611000" />
-      <workItem from="1710222631667" duration="29588000" />
+      <workItem from="1710222631667" duration="29921000" />
+      <workItem from="1710985950264" duration="717000" />
+      <workItem from="1711442397292" duration="2434000" />
+      <workItem from="1711875218525" duration="5792000" />
+      <workItem from="1711935930418" duration="246000" />
+      <workItem from="1711960094014" duration="45000" />
+      <workItem from="1711960181669" duration="4000" />
+      <workItem from="1711960690282" duration="4234000" />
+      <workItem from="1711970533692" duration="11000" />
+      <workItem from="1712042573218" duration="2951000" />
+      <workItem from="1712048745372" duration="9484000" />
+      <workItem from="1712062521941" duration="895000" />
+      <workItem from="1712108153455" duration="6181000" />
     </task>
     <servers />
   </component>
@@ -206,14 +225,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/aqs/test.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/aqs/test.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/Test.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,29 +1,29 @@
+import java.lang.reflect.Field;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Spliterator;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Test {
+    public  ThreadLocal threadLocal1 = ThreadLocal.withInitial(() -> 0);
+    public  ThreadLocal threadLocal2 = ThreadLocal.withInitial(() -> 0);
+
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        list.add("5");
-//        Iterator iterator1 = list.descendingIterator();
-//        while(iterator1.hasNext()) {
-//            System.out.println(iterator1.next());
-//        }
-        ListIterator iterator2 = list.listIterator();
-        while (true) {
-            if(iterator2.hasPrevious() && iterator2.hasNext()) {
-                System.out.println(iterator2.next());
-            } else if(iterator2.hasNext()) {
-                iterator2.next();
-            } else {
-                break;
+        Test test = new Test();
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                test.threadLocal1.set("100");
+                test.threadLocal2.set("200");
+                try {
+                    Thread.sleep(50000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
-        }
+        }, "t1");
+        thread.start();
     }
 }
